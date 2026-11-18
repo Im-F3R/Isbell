@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Isbell Centro Estético | Belleza y bienestar</title>
   <meta name="description" content="Isbell Centro Estético: yoga facial, masajes relajantes, experiencia After Office, tratamiento de melasma, mesoterapia facial y atención nutricional. Atención personalizada con cita previa.">
-  <meta name="theme-color" content="#f7f1ec">
+  <meta name="theme-color" content="#fd904d">
   <meta property="og:title" content="Isbell Centro Estético">
   <meta property="og:description" content="Especialistas en tu belleza y bienestar. Reserva tu cita por WhatsApp.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23b0796a'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='38' fill='%23fff'%3EI%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="img/isotipo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
   <header class="header" id="top">
     <div class="container header__inner">
       <a href="#top" class="brand" aria-label="Isbell Centro Estético, inicio">
-        <span class="brand__mark" aria-hidden="true">I</span>
+        <img class="brand__mark" src="img/isotipo.png" alt="" width="121" height="191">
         <span class="brand__text">
           <strong>Isbell</strong>
           <small>Centro Estético</small>
@@ -65,22 +65,11 @@
           </ul>
         </div>
 
-        <div class="hero__art reveal" aria-hidden="true">
-          <div class="orb orb--1"></div>
-          <div class="orb orb--2"></div>
-          <div class="hero__card">
-            <svg viewBox="0 0 200 200" class="lotus">
-              <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M100 150 C 80 120, 80 80, 100 50 C 120 80, 120 120, 100 150 Z"/>
-                <path d="M100 150 C 70 135, 50 105, 52 72 C 80 85, 98 115, 100 150 Z"/>
-                <path d="M100 150 C 130 135, 150 105, 148 72 C 120 85, 102 115, 100 150 Z"/>
-                <path d="M100 150 C 60 150, 30 130, 20 105 C 55 102, 85 120, 100 150 Z"/>
-                <path d="M100 150 C 140 150, 170 130, 180 105 C 145 102, 115 120, 100 150 Z"/>
-                <path d="M50 165 C 80 158, 120 158, 150 165"/>
-              </g>
-            </svg>
-            <p class="hero__card-title">Tu momento</p>
-            <p class="hero__card-text">Relájate. Respira. Cuídate.</p>
+        <div class="hero__art reveal">
+          <img class="hero__photo" src="img/hero-spa.jpg" alt="Toalla bordada con el logo de Isbell junto a una vela, flores y piedras de masaje" width="1414" height="955">
+          <div class="hero__badge" aria-hidden="true">
+            <img src="img/isotipo.png" alt="">
+            <div><strong>Tu momento</strong><span>Relájate. Respira. Cuídate.</span></div>
           </div>
         </div>
       </div>
@@ -175,7 +164,7 @@
 
           <!-- 2. Masaje relajante -->
           <article class="card reveal" data-cat="relajacion">
-            <div class="card__top card__top--sage">
+            <div class="card__top card__top--photo" style="background-image:url('img/masaje.jpg')">
               <span class="card__num">02</span>
               <span class="card__tag">Corporal</span>
             </div>
@@ -272,7 +261,7 @@
 
           <!-- 6. Mesoterapia -->
           <article class="card reveal" data-cat="facial valoracion">
-            <div class="card__top card__top--sage">
+            <div class="card__top card__top--photo" style="background-image:url('img/facial.jpg'); background-position: 60% 40%">
               <span class="card__num">06</span>
               <span class="card__tag">Requiere valoración</span>
             </div>
@@ -345,6 +334,7 @@
     <section class="section booking" id="reservar">
       <div class="container booking__grid">
         <div class="booking__intro reveal">
+          <img class="booking__logo" src="img/logo-blanco.png" alt="Isbell Centro Estético" width="245" height="319">
           <p class="eyebrow eyebrow--light">Reserva tu cita</p>
           <h2>Regálate un momento para ti</h2>
           <p>
@@ -448,13 +438,7 @@
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="brand brand--footer">
-        <span class="brand__mark" aria-hidden="true">I</span>
-        <span class="brand__text">
-          <strong>Isbell</strong>
-          <small>Centro Estético</small>
-        </span>
-      </div>
+      <img class="footer__logo" src="img/logo.png" alt="Isbell Centro Estético" width="245" height="319">
       <p class="footer__tagline">Especialistas en tu belleza y bienestar.</p>
       <nav class="footer__nav" aria-label="Pie de página">
         <a href="#servicios">Servicios</a>
