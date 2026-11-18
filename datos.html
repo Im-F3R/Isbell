@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datos de reserva | Isbell Centro Estético</title>
+  <meta name="description" content="Completa tus datos para registrar tu cita en Isbell Centro Estético.">
+  <meta name="theme-color" content="#FF914D">
+  <meta property="og:title" content="Datos de reserva | Isbell Centro Estético">
+  <meta property="og:description" content="Completa tus datos para registrar tu cita en Isbell Centro Estético.">
+  <meta property="og:image" content="img/hero-spa.jpg">
+  <link rel="icon" type="image/png" href="img/isotipo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="datos" data-simple-header>
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Datos de tu reserva</h1>
+        <p>Solo te pedimos la información necesaria para registrar tu cita.</p>
+        <ol class="steps-bar" aria-label="Progreso de la reserva">
+          <li class="is-done">Servicio y horario</li><li aria-current="step">Tus datos</li><li>Confirmación</li>
+        </ol>
+      </div>
+    </section>
+    <section class="section section--tight">
+      <form class="container booking" id="data-form" novalidate>
+        <div class="booking__main">
+          <p class="alert alert--info" id="login-hint"></p>
+          <section class="panel" aria-labelledby="d1">
+            <h2 class="panel__title" id="d1"><span class="panel__num">1</span>Datos del cliente</h2>
+            <div class="field-row">
+              <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="given-name" required></div>
+              <div class="field"><label for="apellido">Apellido</label><input id="apellido" name="apellido" autocomplete="family-name" required></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="telefono">Teléfono / WhatsApp</label><input id="telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="09XXXXXXXX" required></div>
+              <div class="field"><label for="email">Correo electrónico <span class="opt">(opcional)</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com"></div>
+            </div>
+            <div class="field"><label for="comentario">Comentarios <span class="opt">(opcional)</span></label><textarea id="comentario" name="comentario" placeholder="Cuéntanos si tienes alguna condición, alergia o preferencia que debamos conocer."></textarea></div>
+          </section>
+          <section class="panel" aria-labelledby="d2">
+            <h2 class="panel__title" id="d2"><span class="panel__num">2</span>Modalidad de pago</h2>
+            <fieldset class="pay" id="pay" style="border:0;padding:0;margin:0"><legend class="visually-hidden">Modalidad de pago</legend></fieldset>
+            <p class="field__hint" style="margin-top:.85rem">Nunca te pediremos datos de tarjetas en este sitio. Si se habilitan pagos en línea, serás dirigido a una pasarela segura.</p>
+          </section>
+          <section class="panel" aria-labelledby="d3">
+            <h2 class="panel__title" id="d3"><span class="panel__num">3</span>Confirmación</h2>
+            <div class="field"><label class="check"><input type="checkbox" name="condiciones" id="condiciones"> <span>Acepto las <a class="link" href="ayuda.html#politicas" target="_blank">condiciones de reserva</a> y el <a class="link" href="ayuda.html#politicas" target="_blank">tratamiento de mis datos personales</a> para gestionar mi cita.</span></label></div>
+          </section>
+        </div>
+        <aside class="aside">
+          <div class="panel">
+            <h2 class="panel__title">Resumen de la cita</h2>
+            <div id="mini-svc"></div>
+            <ul class="summary" id="summary" style="margin-top:1rem"></ul>
+            <p class="alert alert--error" id="d-error" role="alert" hidden></p>
+            <button class="btn btn--block" type="submit">Confirmar reserva</button>
+            <a class="link-back" href="reservar.html" style="margin-top:1rem;justify-content:center;width:100%"><span data-icon="back"></span>Cambiar fecha u hora</a>
+          </div>
+        </aside>
+      </form>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/pages/datos.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicio | Isbell Centro Estético</title>
+  <meta name="description" content="Detalle del servicio: descripción, beneficios, duración, precio y reserva.">
+  <meta name="theme-color" content="#FF914D">
+  <meta property="og:title" content="Servicio | Isbell Centro Estético">
+  <meta property="og:description" content="Detalle del servicio: descripción, beneficios, duración, precio y reserva.">
+  <meta property="og:image" content="img/hero-spa.jpg">
+  <link rel="icon" type="image/png" href="img/isotipo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="servicios">
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="section section--tight" style="padding-top:1.5rem">
+      <div class="container">
+        <ol class="crumbs" id="crumbs"></ol>
+        <div class="detail" id="detail"></div>
+      </div>
+    </section>
+    <section class="section section--white" id="detail-more">
+      <div class="container split" style="align-items:start">
+        <div class="prose">
+          <h2>¿En qué consiste?</h2>
+          <p id="d-consiste"></p>
+          <div id="d-incluye"></div>
+          <h2 style="margin-top:2rem">Beneficios</h2>
+          <ul class="checks" id="d-beneficios"></ul>
+          <p class="small muted" style="margin-top:1rem">Los beneficios descritos son orientativos y pueden variar según cada persona.</p>
+        </div>
+        <div>
+          <h2 class="prose" style="font-size:clamp(1.4rem,2.6vw,1.85rem)">Información importante</h2>
+          <div class="accordion" id="d-info"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section__row">
+          <div class="section__head"><span class="eyebrow">También te puede interesar</span><h2>Servicios relacionados</h2></div>
+          <a class="link" href="servicios.html">Ver todos <span data-icon="arrow"></span></a>
+        </div>
+        <div class="grid grid--3" id="d-related"></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/pages/servicio.js"></script>
+</body>
+</html>

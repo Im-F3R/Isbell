@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuestros servicios | Isbell Centro Estético</title>
+  <meta name="description" content="Explora los tratamientos estéticos y experiencias de bienestar de Isbell Centro Estético: precios, duración y reservas.">
+  <meta name="theme-color" content="#FF914D">
+  <meta property="og:title" content="Nuestros servicios | Isbell Centro Estético">
+  <meta property="og:description" content="Explora los tratamientos estéticos y experiencias de bienestar de Isbell Centro Estético: precios, duración y reservas.">
+  <meta property="og:image" content="img/hero-spa.jpg">
+  <link rel="icon" type="image/png" href="img/isotipo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="servicios">
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <ol class="crumbs"><li><a href="index.html">Inicio</a></li><li aria-current="page">Servicios</li></ol>
+        <h1>Nuestros servicios</h1>
+        <p>Explora nuestros tratamientos estéticos y experiencias de bienestar.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="toolbar">
+          <p class="toolbar__count" id="count" aria-live="polite"></p>
+          <div class="toolbar__tools">
+            <label class="searchbar" for="q">
+              <span data-icon="search"></span>
+              <span class="visually-hidden">Buscar en el catálogo</span>
+              <input id="q" type="search" placeholder="Buscar tratamiento…" autocomplete="off">
+            </label>
+            <label class="select-inline">Ordenar
+              <select id="sort">
+                <option value="relevancia">Recomendados</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+                <option value="nombre">Nombre (A–Z)</option>
+              </select>
+            </label>
+            <button class="btn btn--outline btn--sm filters-toggle" type="button" aria-expanded="false" aria-controls="filters">Filtros</button>
+          </div>
+        </div>
+        <div class="catalog">
+          <form class="filters" id="filters" aria-label="Filtros">
+            <div class="filters__head"><h2>Filtrar</h2><button class="link" type="reset" style="background:none;border:0;cursor:pointer">Limpiar</button></div>
+            <fieldset id="f-cat"><legend>Categoría</legend></fieldset>
+            <fieldset><legend>Precio</legend>
+              <label class="check"><input type="checkbox" name="precio" value="0-20"> Hasta $20</label>
+              <label class="check"><input type="checkbox" name="precio" value="20-50"> De $20 a $50</label>
+              <label class="check"><input type="checkbox" name="precio" value="50-999"> Más de $50</label>
+              <label class="check"><input type="checkbox" name="precio" value="consultar"> Consultar precio</label>
+            </fieldset>
+            <fieldset><legend>Duración</legend>
+              <label class="check"><input type="checkbox" name="dur" value="30"> Hasta 30 minutos</label>
+              <label class="check"><input type="checkbox" name="dur" value="60"> Hasta 60 minutos</label>
+              <label class="check"><input type="checkbox" name="dur" value="na"> Duración por confirmar</label>
+            </fieldset>
+          </form>
+          <div class="results" id="results"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/pages/servicios.js"></script>
+</body>
+</html>

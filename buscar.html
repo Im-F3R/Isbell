@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buscar tratamientos | Isbell Centro Estético</title>
+  <meta name="description" content="Busca tratamientos y servicios en Isbell Centro Estético.">
+  <meta name="theme-color" content="#FF914D">
+  <meta property="og:title" content="Buscar tratamientos | Isbell Centro Estético">
+  <meta property="og:description" content="Busca tratamientos y servicios en Isbell Centro Estético.">
+  <meta property="og:image" content="img/hero-spa.jpg">
+  <link rel="icon" type="image/png" href="img/isotipo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="buscar">
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <ol class="crumbs"><li><a href="index.html">Inicio</a></li><li aria-current="page">Buscar</li></ol>
+        <h1>Buscar tratamientos</h1>
+        <form id="search-form" role="search" style="max-width:720px;margin-top:1.25rem">
+          <div class="searchbar">
+            <span data-icon="search"></span>
+            <label for="search-q" class="visually-hidden">¿Qué tratamiento estás buscando?</label>
+            <input id="search-q" name="q" type="search" placeholder="¿Qué tratamiento estás buscando?" autocomplete="off">
+            <button class="btn btn--sm" type="submit">Buscar</button>
+          </div>
+          <div class="suggest">Prueba con:
+            <a class="chip" href="buscar.html?q=masaje">Masaje</a>
+            <a class="chip" href="buscar.html?q=facial">Facial</a>
+            <a class="chip" href="buscar.html?q=relajación">Relajación</a>
+            <a class="chip" href="buscar.html?q=melasma">Melasma</a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="section section--tight">
+      <div class="container">
+        <p class="toolbar__count" id="search-summary" aria-live="polite"></p>
+        <div class="grid grid--3" id="search-results" style="margin-top:1.25rem"></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/pages/buscar.js"></script>
+</body>
+</html>

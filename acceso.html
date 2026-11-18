@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión o crear cuenta | Isbell Centro Estético</title>
+  <meta name="description" content="Accede a tu cuenta de Isbell Centro Estético para administrar tus citas.">
+  <meta name="theme-color" content="#FF914D">
+  <meta property="og:title" content="Iniciar sesión o crear cuenta | Isbell Centro Estético">
+  <meta property="og:description" content="Accede a tu cuenta de Isbell Centro Estético para administrar tus citas.">
+  <meta property="og:image" content="img/hero-spa.jpg">
+  <link rel="icon" type="image/png" href="img/isotipo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="acceso">
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="auth">
+      <div class="container" style="display:grid;place-items:center">
+        <div class="auth__card">
+          <img class="auth__logo" src="img/logo.png" alt="Isbell Centro Estético">
+          <div class="form-card">
+            <div class="auth__tabs" role="tablist" aria-label="Acceso">
+              <button role="tab" id="tab-login" aria-controls="panel-login" aria-selected="true">Iniciar sesión</button>
+              <button role="tab" id="tab-reg" aria-controls="panel-reg" aria-selected="false" tabindex="-1">Crear cuenta</button>
+            </div>
+            <p class="alert alert--error" id="auth-error" role="alert" hidden></p>
+
+            <form id="panel-login" role="tabpanel" aria-labelledby="tab-login" novalidate>
+              <div class="field"><label for="l-email">Correo electrónico</label><input id="l-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="l-clave">Contraseña</label><div class="pw"><input id="l-clave" name="clave" type="password" autocomplete="current-password" required><button type="button" data-toggle-pw>Mostrar</button></div></div>
+              <button class="btn btn--block" type="submit">Iniciar sesión</button>
+              <p class="center small" style="margin:1rem 0 0"><a class="link" href="#" id="forgot">¿Olvidaste tu contraseña?</a></p>
+            </form>
+
+            <form id="panel-reg" role="tabpanel" aria-labelledby="tab-reg" hidden novalidate>
+              <div class="field-row">
+                <div class="field"><label for="r-nombre">Nombre</label><input id="r-nombre" name="nombre" autocomplete="given-name" required></div>
+                <div class="field"><label for="r-apellido">Apellido</label><input id="r-apellido" name="apellido" autocomplete="family-name" required></div>
+              </div>
+              <div class="field"><label for="r-email">Correo electrónico</label><input id="r-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="r-tel">Teléfono</label><input id="r-tel" name="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="09XXXXXXXX" required></div>
+              <div class="field"><label for="r-clave">Contraseña</label><div class="pw"><input id="r-clave" name="clave" type="password" autocomplete="new-password" required><button type="button" data-toggle-pw>Mostrar</button></div><p class="field__hint">Mínimo 8 caracteres.</p></div>
+              <div class="field"><label for="r-clave2">Confirmar contraseña</label><input id="r-clave2" name="clave2" type="password" autocomplete="new-password" required></div>
+              <div class="field"><label class="check"><input type="checkbox" name="condiciones"> <span>Acepto las <a class="link" href="ayuda.html#politicas" target="_blank">condiciones del servicio</a> y la <a class="link" href="ayuda.html#politicas" target="_blank">política de privacidad</a>.</span></label></div>
+              <button class="btn btn--block" type="submit">Crear cuenta</button>
+            </form>
+          </div>
+          <p class="center small muted" style="margin-top:1.25rem">No necesitas una cuenta para ver servicios o reservar. <a class="link" href="servicios.html">Ver servicios</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/pages/acceso.js"></script>
+</body>
+</html>
